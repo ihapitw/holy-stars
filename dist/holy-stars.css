@@ -1,0 +1,2 @@
+.holy-stars{display:inline-flex;width:100%}.holy-stars__entity{position:relative;margin-right:8px;width:14px;height:14px}.holy-stars__entity:last-child{margin-right:0}.holy-stars__entity svg{position:absolute;top:0;left:0;z-index:1}.holy-stars__entity svg:first-child{z-index:2}
+

@@ -1,0 +1,22 @@
+.holy-stars {
+  display: inline-flex;
+  width: 100%;
+  &__entity {
+    position: relative;
+    margin-right: 8px;
+    width: 14px;
+    height: 14px;
+    &:last-child {
+      margin-right: 0;
+    }
+    svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      &:first-child {
+        z-index: 2;
+      }
+    }
+  }
+}
