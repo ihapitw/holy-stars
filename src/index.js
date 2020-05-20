@@ -58,3 +58,5 @@ export class HolyStars {
     this.compute()
   }
 }
+
+export default HolyStars

@@ -1,6 +1,6 @@
 {
   "name": "holy-stars",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple stars widget",
   "main": "dist/holy-stars.js",
   "module": "src/index.js",
