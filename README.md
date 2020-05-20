@@ -2,7 +2,7 @@
 Simple rate widget
 ```
 import 'holy-stars/dist/holy-stars.css' // or in your styles
-import { HolyStars } from 'holy-stars'
+import HolyStars from 'holy-stars'
 
 const stars = new HolyStars({
   el: document.getElementById('stars'), // required option, only HTMLElement
