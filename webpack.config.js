@@ -80,12 +80,12 @@ development = {
   }
 }
 const production = {
-  entry: ['./src/index.js', './src/styles/index.scss'],
+  entry: ['./src/root.js', './src/styles/index.scss'],
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'holy-stars.js',
     library: 'HolyStars',
-    libraryTarget: 'commonjs-module'
+    libraryTarget: 'umd'
   },
   plugins: [
     new MiniCssExtractPlugin({
