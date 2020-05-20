@@ -85,7 +85,7 @@ const production = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'holy-stars.js',
     library: 'HolyStars',
-    libraryTarget: 'umd'
+    libraryTarget: 'amd'
   },
   plugins: [
     new MiniCssExtractPlugin({
