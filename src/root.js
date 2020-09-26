@@ -3,7 +3,7 @@ import { HolyRender } from './modules/holy-render'
 
 export default class HolyStars {
   constructor(options) {
-    this.options = { ...DEFAULT_OPTIONS, ...options }
+    this.options = Object.assign({}, DEFAULT_OPTIONS, options)
 
     if (this.options.el instanceof HTMLElement) {
       this.el = this.options.el
