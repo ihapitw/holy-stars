@@ -80,12 +80,15 @@ development = {
   }
 }
 const production = {
-  entry: ['./src/root.js', './src/styles/index.scss'],
+  mode: 'production',
+  entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'holy-stars.js',
     library: 'HolyStars',
-    libraryTarget: 'umd'
+    libraryTarget: 'umd',
+    libraryExport: 'default',
+    globalObject: 'this'
   },
   plugins: [
     new MiniCssExtractPlugin({
@@ -96,16 +99,9 @@ const production = {
   module: {
     rules: [
       {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: [
-          {
-            loader: 'babel-loader'
-          },
-          {
-            loader: 'eslint-loader'
-          }
-        ]
+        test: /\.(js)$/,
+        exclude: /(node_modules|bower_components)/,
+        use: 'babel-loader'
       },
       {
         test: /\.scss$/,
