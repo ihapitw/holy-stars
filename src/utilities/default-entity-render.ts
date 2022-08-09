@@ -1,26 +1,6 @@
-# Holy Stars
-### Simple rate widget
-```javascript
-import 'holy-stars/index.css'
-import { HolyStars } from 'holy-stars'
+import {EntityRenderTemplate, HolyOptions} from '@src/types'
 
-const stars = new HolyStars({
-  el: document.getElementById('stars'),
-  rate: 4.4,
-  size: 16,
-  primaryColor: '#FFE135',
-  secondColor: '#ddd',
-})
-
-stars.update({
-  rate: 4,
-  size: 24,
-})
-```
-
-### Custom entry template
-```javascript
-const renderTemplate = ({size = 12, primaryColor, secondColor}, offset = 1) => {
+export const defaultEntityRender: EntityRenderTemplate = ({size = 12, primaryColor, secondColor}: HolyOptions, offset= 1,) => {
   return `
     <div class="holy-stars__entity" style="width: ${size}px; height: ${size}px">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${24 * offset} 24" width="${size * offset}" height="${size}">
@@ -31,9 +11,3 @@ const renderTemplate = ({size = 12, primaryColor, secondColor}, offset = 1) => {
       </svg>
     </div>`
 }
-
-new HolyStars({
-  el: document.getElementById('stars'),
-  rate: 4.4,
-}, renderTemplate)
-```
