@@ -1,5 +1,8 @@
 # Holy Stars
 ### Simple rate widget
+
+### [LIVE DEMO](https://codesandbox.io/s/elegant-williams-jyrfif?file=/src/index.js)
+
 ```javascript
 import 'holy-stars/index.css'
 import { HolyStars } from 'holy-stars'
@@ -33,7 +36,7 @@ const renderTemplate = ({size = 12, primaryColor, secondColor}, offset = 1) => {
         </svg>
       </div>`
 }
-const render = new HolyStars(renderTemplate)
+const render = new HolyRender(renderTemplate)
 
 const stars1 = new HolyStars({
   el: document.getElementById('stars1'),

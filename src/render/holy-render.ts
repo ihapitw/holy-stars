@@ -23,7 +23,7 @@ export class HolyRender {
       }
     }
 
-    el.outerHTML = `<div class="holy-stars">${starsTemplate}</div>`
+    el.innerHTML = `<div class="holy-stars">${starsTemplate}</div>`
   }
 }
 
