@@ -33,7 +33,7 @@ const renderTemplate = ({size = 12, primaryColor, secondColor}, offset = 1) => {
         </svg>
       </div>`
 }
-const render = new HolyStars.HolyRender(renderTemplate)
+const render = new HolyStars(renderTemplate)
 
 const stars1 = new HolyStars({
   el: document.getElementById('stars1'),
